@@ -1,20 +1,27 @@
-# fedex-surcharge-scraper
-"Automatic web scraper for FedEx international fuel surcharges"
+# FedEx International Fuel Surcharge Scraper  
+**Playwright · Python · asyncio**
 
-# FedEx International Fuel Surcharge Scraper (Playwright + asyncio)
+A small but complete web-scraping project that demonstrates how to reliably extract data from a modern, dynamic website using **Playwright (Python)** and **asyncio**.
 
-This project demonstrates:
-- browser automation using Playwright (Python, asyncio),
-- handling cookie banners (Usercentrics) and geo-location modals,
-- interaction with a dynamic website (the “International Fuel Surcharge” tab, “Show all weeks”),
-- extracting data from a table and saving it to JSON,
-- capturing a screenshot of the table (PNG).
+The script navigates the FedEx surcharge page, handles cookie consent and geo-location modals, interacts with dynamic UI elements, and extracts structured data from a table.
 
-## Requirements
-- Python 3.10+ (3.11 / 3.12 recommended)
-- `playwright>=1.42`
+---
 
-## Installation
+## ✨ What this project demonstrates
 
-```bash
-python -m venv .venv
+- Browser automation with **Playwright (Python, async API)**
+- Handling **cookie consent banners** (Usercentrics, including iframe cases)
+- Handling **geo-location / language modals**
+- Interaction with **dynamic content**
+  - switching tabs (“International Fuel Surcharge”)
+  - expanding hidden rows (“Show all weeks”)
+- Reliable **table data extraction**
+- Saving results to:
+  - structured **JSON**
+  - **PNG screenshot** of the table
+- Clean, readable async code with separated helper functions
+
+---
+
+## 📂 Project structure
+
