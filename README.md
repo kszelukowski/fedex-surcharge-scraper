@@ -24,4 +24,52 @@ The script navigates the FedEx surcharge page, handles cookie consent and geo-lo
 ---
 
 ## 📂 Project structure
+fedex-surcharge-scraper/
+├─ scrape_fedex.py
+├─ README.md
+├─ requirements.txt
+├─ .gitignore
+└─ (optional)
+├─ example_surcharges.json
+└─ example_table.png
 
+
+---
+
+## 🧰 Requirements
+
+- **Python 3.10+** (3.11 / 3.12 recommended)
+- **Playwright ≥ 1.42**
+
+---
+
+## ⚙️ Installation
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+
+
+Windows (PowerShell):
+
+.venv\Scripts\Activate.ps1
+
+
+macOS / Linux:
+
+source .venv/bin/activate
+
+
+Install dependencies and Playwright browsers:
+
+pip install -r requirements.txt
+python -m playwright install
+
+
+In corporate environments (proxy / firewall), you may need:
+
+python -m playwright install chromium
+
+▶️ Running the scraper
+python scrape_fedex.py
